@@ -107,4 +107,4 @@ function isElementInViewport(el) {
     rect.bottom <= (window.innerHeight + ($(el).height()) || document.documentElement.clientHeigh) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   )
-}
+}//Feito por Luis Henrique Jacinto e Raimundo Lima
