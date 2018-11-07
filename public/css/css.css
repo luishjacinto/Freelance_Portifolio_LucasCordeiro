@@ -1,0 +1,389 @@
+body {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.footer {
+  background-image: url("../img/home.jpg") !important;
+  height: 6em;
+}
+
+#home {
+  background-image: url("../img/home.jpg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#profissional {
+  padding-top: 8%;
+  padding-bottom: 6em;
+  background-image: url("../img/profissional.jpg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#portifolio {
+  background-color: #535768 !important;
+  padding-top: 8%;
+  padding-bottom: 6em;
+}
+
+#experiencia {
+  background-image: url("../img/experiencia.jpg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 8%;
+  padding-bottom: 8em;
+}
+
+.contato-card {
+  background-color: #535768 !important;
+  position: relative;
+  bottom: 7em;
+}
+
+.contato1 {
+  background-color: #535768 !important;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+textarea {
+  all: initial;
+  background-color: #fff
+}
+
+input#nome,
+input#email {
+  width: 45%;
+  margin-top: 1.6em;
+  line-height: 1.9em;
+}
+
+input {
+  width: 100%;
+  margin-top: 1.6em;
+  line-height: 1.9em;
+}
+
+.redondo {
+  margin-top: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.logo {
+  bottom: 0;
+  width: 100%;
+}
+
+.imagem {
+  height: 15em;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w49 {
+  width: 49% !important;
+}
+
+.p100 {
+  width: 80%;
+}
+
+.w90 {
+  width: 90;
+}
+
+.marg8 {
+  margin-left: 8%;
+}
+
+.h10em {
+  height: 18em;
+}
+
+.opacAnimation {
+  animation: loadText 1.5s linear;
+}
+
+.load {
+  background-color: #3f4 !important;
+  height: 1.5em;
+  border-radius: 25px 25px 25px 25px;
+  animation: load 2s ease-in-out both;
+}
+
+.loadText {
+  position: relative;
+  left: 101.5%;
+  animation: loadText 1.5s ease-in-out both;
+}
+
+.op0 {
+  opacity: 0;
+}
+
+.padTop {
+  margin: 0;
+  padding-top: 2.8em;
+}
+
+.center {
+  text-align: center;
+}
+
+.hover:hover {
+  background-color: RGBA(255, 255, 255, 0.1);
+}
+
+.hoverBtnVoltar:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 225, 0.1), rgba(255, 255, 255, 0));
+}
+
+.hoverBtnAvancar:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 225, 0.1));
+}
+
+nav.nav-center ul {
+  text-align: center;
+}
+
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-top: 0em;
+  font-weight: bold;
+  font-size: 6em;
+}
+
+.direita {
+  text-align: right;
+}
+
+.marginb8 {
+  margin-bottom: 8%;
+}
+
+.materialboxed {
+  display: inline !important;
+}
+
+.base {
+  width: 2%;
+  left: 49%;
+  padding-top: 2.5%;
+  position: absolute;
+}
+
+.anima2 {
+  width: 0.25em;
+  height: 62em;
+  background-color: #00D646;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  animation: anima2 6s linear;
+}
+
+.contato {
+  padding-right: 15%;
+}
+
+input {
+  background-color: #fff !important;
+  border-radius: 10px !important;
+}
+
+textarea {
+  background-color: #fff !important;
+  border-radius: 10px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+}
+
+.divText {
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  overflow-x: hidden
+}
+
+.form2 {
+  width: 95%;
+}
+
+.modallll {
+  background-color: black;
+  height: auto;
+  margin-top: 5% !important;
+}
+
+.imagemModal {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.captionModal {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2%;
+}
+
+.divImg {
+  background-color: RGBA(0, 0, 0, 0.4);
+  width: 100%;
+  height: 450px;
+}
+
+.divImg2 {
+  height: 100%;
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+}
+
+.desktop {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+}
+
+.galeria {
+  height: 450px;
+  margin-top: 3em;
+}
+
+.btnVoltar {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  width: 15%;
+  height: 450px;
+  ;
+  position: absolute;
+  left: 0;
+}
+
+.btnZoom {
+  left: 48.5%;
+  position: absolute;
+  font-size: 90px !important;
+  transform: translate(-27px, 0);
+  color: RGBA(255, 255, 255, 0.1);
+}
+
+.btnAvancar {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  position: absolute;
+  right: 0;
+  height: 450px;
+  width: 15%;
+}
+
+.icone {
+  margin-top: 201px;
+  font-size: -webkit-xxx-large;
+}
+
+/*animações*/
+
+@keyframes anima2 {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 0% 0%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes load {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes loadText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .base {
+    padding-top: 3%;
+  }
+
+  .anima2 {
+    height: 70em;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .redondo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  .form {
+    width: 100% !important;
+  }
+
+  .form2 {
+    width: 100%
+  }
+}
+
+@media screen and (max-width:600px) {
+  .p100 {
+    width: 100%;
+  }
+
+}
