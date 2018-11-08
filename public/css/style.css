@@ -37,6 +37,7 @@
 }
 
 .sub2 {
+    font-weight: 600;
     text-align: center;
     padding-top: 1%;
     font-size: 20px;
@@ -60,6 +61,7 @@
 }
 
 .submit {
+    font-weight: 800;
     margin-bottom: 2em;
     font-size: 20px;
     font-family: 'Andale Mono', monospace;
@@ -129,6 +131,9 @@
     position: relative;
     top: -1em;
 }
+.menu:hover{
+    cursor: pointer;
+}
 
 .menu-link {
     font-size: 1em;
@@ -150,13 +155,13 @@
 }
 
 #sidenaverson {
-    background-color: #737;
-    max-width: 70%;
+    background-color: #535768;
+    max-width: 25%;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    left: -70%;
+    left: -25%;
     z-index: 999;
     transition: left 0.7s;
 }
@@ -192,6 +197,10 @@
 }
 
 @media screen and (max-width:1000px) {
+    #sidenaverson {
+        max-width: 35%;
+        left: -35%;
+    }
     .ponto1 {
         top: -0.1em;
     }
@@ -211,6 +220,10 @@
 }
 
 @media screen and (max-width:600px) {
+    #sidenaverson {
+        max-width: 50%;
+        left: -50%;
+    }
     .mt {
         margin-top: 40%;
         margin-bottom: 35%;
@@ -235,6 +248,10 @@
 }
 
 @media screen and (max-width:400px) {
+    #sidenaverson {
+        max-width: 70%;
+        left: -70%;
+    }
     .titulo {
         font-weight: 550;
         font-size: 26px;

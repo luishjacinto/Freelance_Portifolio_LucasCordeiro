@@ -10,7 +10,7 @@ var c = keys.length - 1;
 
 $(document).ready(function () {
   setTimeout(function () {
-    var c = keys.length - 1;
+    c = keys.length-1;
     adicionar(c);
   }, 1500);
 
@@ -67,35 +67,41 @@ $(document).ready(function () {
   })
 });
 
+
 document.getElementById('btnVoltar').addEventListener("click", function () {
-  c = (c + 1) % (keys.length);
+  c++;
   adicionar(c);
 });
 
 document.getElementById('btnAvancar').addEventListener("click", function () {
-  c = (c - 1) % (keys.length);
-  if (c < 0) c = keys.length - 1;
+  c--;
+  if(c < 0) c = keys.length - 1;
   adicionar(c);
 });
 
 function adicionar(c) {
-  firebase.database().ref("projetos/" + keys[c]).on('value', function (snapshot) {
-    var nome = snapshot.child("nome").val();
-    var status = snapshot.child("status").val();
-    var descricao = snapshot.child("descricao").val();
-    imagem = snapshot.child("imagem").val();
+  firebase.database().ref("projetos/" + keys[c%keys.length]).on('value', function (snapshot) {
+    $("#img1").addClass("fade-out");
+    setTimeout(function () {
+      $("#img1").removeClass("fade-out");
+      var nome = snapshot.child("nome").val();
+      var status = snapshot.child("status").val();
+      var descricao = snapshot.child("descricao").val();
+      imagem = snapshot.child("imagem").val();
 
-    var nomeportifolio = document.getElementById('nomeportifolio');
-    var img = document.getElementById('img1');
-    var img2 = document.getElementById('img2');
-    var span = document.getElementById('imgCaption');
-    if(status == "DESENVOLVIMENTO"){nomeportifolio.innerHTML = nome + "(<span style=' color: #BEC7D5'>" + status + "</span>)";}
-    if(status == "TESTES"){nomeportifolio.innerHTML = nome + "(<span style=' color: #FFFFFF'>" + status + "</span>)";}
-    if(status == "PRONTO"){nomeportifolio.innerHTML = nome + "(<span style=' color: #00D646'>" + status + "</span>)";}
-    img.setAttribute('data-caption', descricao);
-    img.setAttribute('src', imagem);
-    img2.setAttribute('src', imagem);
-    span.innerHTML = descricao;
+      var nomeportifolio = document.getElementById('nomeportifolio');
+      var img = document.getElementById('img1');
+      var img2 = document.getElementById('img2');    
+      
+      var span = document.getElementById('imgCaption');
+      if(status == "DESENVOLVIMENTO"){nomeportifolio.innerHTML = nome + "(<span style=' color: #BEC7D5'>" + status + "</span>)";}
+      if(status == "TESTES"){nomeportifolio.innerHTML = nome + "(<span style=' color: #FFFFFF'>" + status + "</span>)";}
+      if(status == "PRONTO"){nomeportifolio.innerHTML = nome + "(<span style=' color: #00D646'>" + status + "</span>)";}
+      img.setAttribute('data-caption', descricao);
+      img.setAttribute('src', imagem);
+      img2.setAttribute('src', imagem);
+      span.innerHTML = descricao;
+    }, 300);
   });
 }
 
@@ -107,4 +113,4 @@ function isElementInViewport(el) {
     rect.bottom <= (window.innerHeight + ($(el).height()) || document.documentElement.clientHeigh) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   )
-}//Feito por Luis Henrique Jacinto e Raimundo Lima
+}

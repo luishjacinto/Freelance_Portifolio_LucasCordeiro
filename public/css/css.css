@@ -103,7 +103,7 @@ input {
 .p100 {
   width: 80%;
 }
-//Feito por Luis Henrique Jacinto e Raimundo Lima
+
 .w90 {
   width: 90;
 }
@@ -313,6 +313,9 @@ textarea {
 }
 
 /*animações*/
+.fade-out{
+  animation: 0.3s fade-out;
+}
 
 @keyframes anima2 {
   0% {
@@ -386,4 +389,20 @@ textarea {
     width: 100%;
   }
 
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: black;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: black;  
+}
+
+:-ms-input-placeholder {  
+  color: black;  
 }
