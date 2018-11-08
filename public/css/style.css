@@ -156,12 +156,12 @@
 
 #sidenaverson {
     background-color: #535768;
-    max-width: 25%;
+    max-width: 17.5%;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    left: -25%;
+    left: -17.5%;
     z-index: 999;
     transition: left 0.7s;
 }
