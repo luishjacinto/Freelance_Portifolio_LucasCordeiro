@@ -31,9 +31,10 @@
 
 .sub {
     padding-top: 1%;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Andale Mono', monospace;
     color: #FFFFFF;
+    font-weight: 800;
 }
 
 .sub2 {
