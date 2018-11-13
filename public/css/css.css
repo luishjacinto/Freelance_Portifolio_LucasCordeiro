@@ -318,6 +318,16 @@ textarea {
   animation: 0.3s fade-out;
 }
 
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+}
+
 @keyframes anima2 {
   0% {
     transform: scaleY(0);
